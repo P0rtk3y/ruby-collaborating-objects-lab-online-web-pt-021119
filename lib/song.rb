@@ -12,6 +12,7 @@ class Song
     artist.save 
     song = self.new(file_name.split(" - ")[1])
     song.artist = artist.name 
+    artist.songs << song 
     binding.pry
   
   end 

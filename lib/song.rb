@@ -13,6 +13,5 @@ class Song
     artist = Artist.find_or_create_by_name(file_name.split(" - ")[0])
     song.artist = artist
     artist.songs << song 
-    
   end 
 end 

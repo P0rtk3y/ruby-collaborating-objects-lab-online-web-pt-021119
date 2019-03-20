@@ -9,8 +9,8 @@ class Song
   
   def self.new_by_filename(file_name)
     song = self.new(file_name.split(" - ")[1])
-    artist = Artist.new(file_name.split(" - ")[0])
-    artist.songs << song 
-    artist.save 
+    new_artist = Artist.new(file_name.split(" - ")[0])
+    new_artist.songs << song 
+    new_artist.save 
   end 
 end 

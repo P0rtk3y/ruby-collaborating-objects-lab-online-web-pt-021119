@@ -21,4 +21,7 @@ class Song
     # artist.songs << song.name
     # artist.save
   end 
+  
+  def artist_name=(name)
+    
 end 

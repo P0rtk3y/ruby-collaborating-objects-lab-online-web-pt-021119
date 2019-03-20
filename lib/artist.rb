@@ -17,8 +17,11 @@ class Artist
   end 
   
   def self.find_or_create_by_name(name)
-    self.all.find{|artist| artist.name == name} || self.new(name) 
+    self.find(name) || self.create(name)
+    # self.all.find{|artist| artist.name == name} || self.new(name) 
   end 
+  
+  
       
   def save 
     @@all << self 

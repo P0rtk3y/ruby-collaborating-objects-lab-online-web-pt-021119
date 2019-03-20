@@ -18,7 +18,6 @@ class Song
     # artist.save 
     # song.artist = artist.name 
     # artist.songs << song 
-    binding.pry
   end 
     
 end 

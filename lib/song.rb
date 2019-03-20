@@ -11,7 +11,6 @@ class Song
     song = self.new(file_name.split(" - ")[1])
     artist = Artist.new(file_name.split(" - ")[0])
     song.artist = artist 
-    artist.songs << song.name 
-    binding.pry
+    artist.songs << song.name
   end 
 end 
